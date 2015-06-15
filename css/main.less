@@ -1,0 +1,60 @@
+@import "/css/fonts/Franklin%20Gothic%20FS%20Book/Webfonts/franklingothicfs_book_macroman/stylesheet.css";
+@import "/css/fonts/Franklin%20Gothic%20FS%20Demi/Webfonts/franklingothicfs_demi_macroman/stylesheet.css";
+@import "/css/fonts/Questa%20Grande%20Regular/Webfonts/questagrande_regular_macroman/stylesheet.css";
+@import "/css/fonts/Questa%20Sans%20Regular/Webfonts/questasans_regular_macroman/stylesheet.css";
+@import "/css/fonts/Questa%20Regular/Webfonts/questa_regular_macroman/stylesheet.css";
+
+body {
+	// background: #C4C2B0;
+	padding-top:2em;
+}
+
+.sans {
+	// font-family: sans-serif;
+	// font-family: 'questa_sansregular';
+	// font-family: 'franklin_gothic_fsbook';
+	font-family: 'franklin_gothic_fsdemi';
+}
+
+.serif {
+	// font-family: serif;
+	// font-family: 'questa_granderegular';
+	font-family: 'questaregular';
+}
+
+img {
+	border-radius: 50%;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+	.sans;
+	// .serif;
+}
+
+p, ol, ul, li {
+	font-family: 'franklin_gothic_fsbook';
+	// font-family: sans-serif;
+	// .sans;
+	// .serif;
+}
+
+blockquote {
+	// border-width: 0.2em;
+	// margin-left: -2.2em;
+	// padding-left: 2em;
+	border: none;
+	padding-left: 0;
+	p {
+		.serif;
+		font-size: 1.4rem;
+	}
+}
+
+// http://stackoverflow.com/questions/14745297/how-to-display-an-unordered-list-in-two-columns
+ul {
+	margin-left: 0.1em;
+	columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style-position: inside; //this is important addition
+}
