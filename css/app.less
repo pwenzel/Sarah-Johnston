@@ -1,0 +1,57 @@
+.body-font {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.headline-font {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+}
+@orange: #E84D25;
+
+body {
+	background: white;
+	.body-font;
+
+	a {
+		&:hover {
+			text-decoration: underline;
+			color:inherit;
+		}
+	}
+}
+
+.panel {
+	background: transparent;
+	padding: 0;
+	border: none;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	.headline-font;
+	color: @orange;
+
+}
+
+
+p, ol, ul, li, span, .button {
+	.body-font;
+}
+
+header {
+	background: #3D2E2E;
+	margin-bottom: 2em;
+	padding-top:2em;
+	h1, h2, h3, h4, h5, h6, p, a {
+		color: white;
+	}
+}
+
+.button {
+	background-color: transparent;
+	border:1px solid white;
+	// transition: none;
+	&:hover {
+		background-color: @orange;
+	}
+}
