@@ -13,6 +13,10 @@
 
 @orange: #E84D25;
 
+@brown: #3D2E2E;
+
+@dark-blue: #313B31;
+
 // Styles
 
 body {
@@ -52,7 +56,7 @@ header {
 	// background-image:url(depositphotos_21832027-Seamless-texture-with-flowers-and-butterflies.jpg);
 
 	.row.wrap {
-		background-color: #3D2E2E;
+		background-color: @brown;
 		padding:1em;
 		border-top:5px solid #313B31;
 	}
@@ -92,6 +96,16 @@ header {
 main {
 	background:white;
 	padding:1em;
+
+	p, ul li {
+		color: @dark-blue !important;
+		font-weight: 400;
+	}
+
+	h5 {
+		font-weight: 700;
+	}
+
 	&:first-of-type {
 		margin-bottom: 2em;
 	}
@@ -101,6 +115,9 @@ footer {
 	background: white;
 	margin-top:3em;
 	padding-top:1em;
+	img {
+		border-radius: 10px;
+	}
 }
 
 footer, main {
@@ -108,10 +125,15 @@ footer, main {
 		font-size: 1.4rem;
 		margin-top: 1em !important;
 		margin-bottom: 1em !important;
-			font-weight: 700;
+		font-weight: 700;
 	}
 }
 
-footer, main, header .wrap {
+footer, main {
 	border-radius: 5px;
+}
+
+header .wrap {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }

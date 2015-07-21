@@ -46,7 +46,7 @@ header {
   margin-bottom: 2em;
 }
 header .row.wrap {
-  background-color: #3D2E2E;
+  background-color: #3d2e2e;
   padding: 1em;
   border-top: 5px solid #313B31;
 }
@@ -84,6 +84,14 @@ main {
   background: white;
   padding: 1em;
 }
+main p,
+main ul li {
+  color: #313b31 !important;
+  font-weight: 400;
+}
+main h5 {
+  font-weight: 700;
+}
 main:first-of-type {
   margin-bottom: 2em;
 }
@@ -91,6 +99,9 @@ footer {
   background: white;
   margin-top: 3em;
   padding-top: 1em;
+}
+footer img {
+  border-radius: 10px;
 }
 footer h3,
 main h3 {
@@ -100,7 +111,10 @@ main h3 {
   font-weight: 700;
 }
 footer,
-main,
-header .wrap {
+main {
   border-radius: 5px;
+}
+header .wrap {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
