@@ -95,6 +95,12 @@ main h5 {
 main:first-of-type {
   margin-bottom: 2em;
 }
+main a {
+  color: #313b31;
+}
+main a:hover {
+  color: #e84d25;
+}
 footer {
   background: white;
   margin-top: 3em;
