@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html itemscope itemtype="http://schema.org/Person">
+<html itemscope itemtype="http://schema.org/LocalBusiness">
 <head>
-	<title>Sarah Johnston, MSW, LICSW</title>
+	<title itemprop="name">Sarah Johnston, MSW, LICSW</title>
 	<script>
 	var host = "sarahjohnstontherapist.com";
 	if ((host == window.location.host) && (window.location.protocol != "https:"))
@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
 	<link href='//fonts.googleapis.com/css?family=Quicksand:400,700|Open+Sans' rel='stylesheet' type='text/css'>
-	<link rel="canonical" href="https://sarahjohnstontherapist.com/">
+	<link rel="canonical" href="https://sarahjohnstontherapist.com/" itemprop="url">
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
 		<div class="medium-12 columns medium-centered">
 
 			<div class="row">
-				<div class="medium-12 columns">
+				<div class="medium-12 columns" itemprop="founder" itemscope itemtype="http://schema.org/Person">
 					<h2 itemprop="name">Sarah Johnston</h2>
 					<h3 itemprop="jobTitle">MSW, LICSW</h3>
 				</div>
@@ -42,11 +42,18 @@
 
 						<h5>Location</h5>
 
-						<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-						In the offices of <a title="Open in Google Maps" href="https://www.google.com/maps/place/North+Star+Midwifery/@44.939781,-93.178727,17z/data=!3m1!4b1!4m2!3m1!1s0x87f629f59cf3418f:0x49492920f35d9b98">
-							Northstar Midwifery at <span style="white-space:nowrap"><span itemprop="streetAddress">1854 Grand Avenue</span> in <span itemprop="addressLocality">St. Paul</span>, <span itemprop="addressRegion">MN</span><span itemprop="postalCode" style="visibility:hidden"> 55105</span>.</span>
-						</a><br />
-						Available Mondays from 9am to 8pm.
+						<p>
+							In the offices of <a title="Open in Google Maps" href="https://www.google.com/maps/place/North+Star+Midwifery/@44.939781,-93.178727,17z/data=!3m1!4b1!4m2!3m1!1s0x87f629f59cf3418f:0x49492920f35d9b98" itemprop="hasMap">
+								Northstar Midwifery at 
+
+								<span itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
+									<span style="white-space:nowrap"><span itemprop="streetAddress">1854 Grand Avenue</span> in <span itemprop="addressLocality">St. Paul</span>, <span itemprop="addressRegion">MN</span><span itemprop="postalCode" style="display:none;"> 55105</span>.</span>
+								</span>
+
+							</a>
+						</p>
+						<p>
+							Available <time itemprop="openingHours" datetime="Mo 9:00-20:00">Mondays from 9am to 8pm</time>.
 						</p>
 
 						<!-- <p><a href="#" class="button tiny radius">SCHEDULE APPOINTMENT</a></p> -->
@@ -181,7 +188,7 @@
 							<h3>Fees</h3>
 
 							<h5>Average Cost Per Session</h5>
-							<p>$125.00&ndash;160.00</p>
+							<p itemprop="priceRange">$125.00&ndash;160.00</p>
 
 							<h5>Clinical supervision</h5>
 							<p>$60 Per Hour</p>
@@ -190,7 +197,7 @@
 							<p>Yes</p>
 
 							<h5>Accepted Payments</h5>
-							<p>Cash, Check, and Credit Card</p>
+							<p itemprop="paymentAccepted">Cash, Check, and Credit Card</p>
 
 							<h5>Insurance</h5>
 							<p>Pending</p>
@@ -202,10 +209,10 @@
 						<h3>Other Networks</h3>
 
 						<ul>
-							<li itemprop="affiliation" itemscope itemtype="http://schema.org/Organization">
+							<li itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
 								<a href="https://therapists.psychologytoday.com/253448" target="_blank" itemprop="url"><span itemprop="name">Psychology Today</span></a>
 							</li>
-							<li itemprop="affiliation" itemscope itemtype="http://schema.org/Organization">
+							<li itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
 								<a href="http://www.ppsupportmn.org" target="_blank" itemprop="url"><span itemprop="name">Pregnancy &amp; Postpartum Support Minnesota Provider List</span></a>
 							</li>
 						</ul>
@@ -233,7 +240,7 @@
 
 				<h3>About Sarah Johnston</h3>
 
-				<img src="//farm1.staticflickr.com/315/19844885874_14727d9676_q.jpg" align="left" style="margin-right:1em;">
+				<img src="//farm1.staticflickr.com/315/19844885874_14727d9676_q.jpg" align="left" style="margin-right:1em;" itemprop="photo">
 
 				<p itemprop="description">I am a Clinical Social Worker who has been working in the field of helping people since 2001. Prior to attending graduate school, I worked extensively with youth and families, especially those experiencing poverty and homelessness. After graduate school, I worked for 5 years at an outpatient mental health clinic in south Minneapolis. There I worked with people of all ages and backgrounds with a variety of mental health needs. I also completed extra training in perinatal mental health issues, experiential play therapy, and adult attachment.</p>
 				<br clear="all" />
