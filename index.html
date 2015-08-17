@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/Person">
 <head>
 	<title>Sarah Johnston, MSW, LICSW</title>
 	<script>
@@ -23,8 +23,8 @@
 
 			<div class="row">
 				<div class="medium-12 columns">
-					<h2>Sarah Johnston</h2>
-					<h3>MSW, LICSW</h3>
+					<h2 itemprop="name">Sarah Johnston</h2>
+					<h3 itemprop="jobTitle">MSW, LICSW</h3>
 				</div>
 			</div>
 
@@ -36,15 +36,15 @@
 
 						<h5>Contact</h5>
 						<p>
-							<a href="mailto:sarahjohnstontherapist@gmail.com">sarahjohnstontherapist@gmail.com</a><br />
-							<a href="tel:6124405707">612-440-5707</a>
+							<a href="mailto:sarahjohnstontherapist@gmail.com"><span itemprop="email">sarahjohnstontherapist@gmail.com</span></a><br />
+							<a href="tel:6124405707" itemprop="telephone">612-440-5707</a>
 						</p>
 
 						<h5>Location</h5>
 
-						<p>
+						<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 						In the offices of <a title="Open in Google Maps" href="https://www.google.com/maps/place/North+Star+Midwifery/@44.939781,-93.178727,17z/data=!3m1!4b1!4m2!3m1!1s0x87f629f59cf3418f:0x49492920f35d9b98">
-							Northstar Midwifery at <span style="white-space:nowrap">1854 Grand Avenue in St. Paul, MN.</span>
+							Northstar Midwifery at <span style="white-space:nowrap"><span itemprop="streetAddress">1854 Grand Avenue</span> in <span itemprop="addressLocality">St. Paul</span>, <span itemprop="addressRegion">MN</span><span itemprop="postalCode" style="visibility:hidden"> 55105</span>.</span>
 						</a><br />
 						Available Mondays from 9am to 8pm.
 						</p>
@@ -202,8 +202,12 @@
 						<h3>Other Networks</h3>
 
 						<ul>
-							<li><a href="https://therapists.psychologytoday.com/253448" target="_blank">Psychology Today</a></li>
-							<li><a href="http://www.ppsupportmn.org" target="_blank">Pregnancy &amp; Postpartum Support Minnesota Provider List</a></li>
+							<li itemprop="affiliation" itemscope itemtype="http://schema.org/Organization">
+								<a href="https://therapists.psychologytoday.com/253448" target="_blank" itemprop="url"><span itemprop="name">Psychology Today</span></a>
+							</li>
+							<li itemprop="affiliation" itemscope itemtype="http://schema.org/Organization">
+								<a href="http://www.ppsupportmn.org" target="_blank" itemprop="url"><span itemprop="name">Pregnancy &amp; Postpartum Support Minnesota Provider List</span></a>
+							</li>
 						</ul>
 						</div>
 
@@ -231,7 +235,7 @@
 
 				<img src="//farm1.staticflickr.com/315/19844885874_14727d9676_q.jpg" align="left" style="margin-right:1em;">
 
-				<p>I am a Clinical Social Worker who has been working in the field of helping people since 2001. Prior to attending graduate school, I worked extensively with youth and families, especially those experiencing poverty and homelessness. After graduate school, I worked for 5 years at an outpatient mental health clinic in south Minneapolis. There I worked with people of all ages and backgrounds with a variety of mental health needs. I also completed extra training in perinatal mental health issues, experiential play therapy, and adult attachment.</p>
+				<p itemprop="description">I am a Clinical Social Worker who has been working in the field of helping people since 2001. Prior to attending graduate school, I worked extensively with youth and families, especially those experiencing poverty and homelessness. After graduate school, I worked for 5 years at an outpatient mental health clinic in south Minneapolis. There I worked with people of all ages and backgrounds with a variety of mental health needs. I also completed extra training in perinatal mental health issues, experiential play therapy, and adult attachment.</p>
 				<br clear="all" />
 			</div>
 		</div>
